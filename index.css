@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header, .content {
+    width: 100%;
+}
+
+/* header */
+.header {
+    background-color: rgb(89, 210, 170);
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+/* board */
+.content {
+    background-color: rgb(208, 241, 230);
+    flex: 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.reset-button {
+    background-color:rgb(89, 210, 107);
+    border-color: transparent;
+    border-radius: 2px;
+}
+
+.reset-button:hover {
+    background-color: rgb(101, 104, 97);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.game-board-cell {
+    width: 100px; 
+    height: 100px; 
+    padding: 10px; 
+    background-color: rgb(145, 238, 208);
+    border-radius: 3px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.game-board-cell:hover {
+    background-color: rgba(120, 195, 171, 0.593);
+}
